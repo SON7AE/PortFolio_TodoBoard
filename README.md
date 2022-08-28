@@ -18,3 +18,10 @@
 
 - https://vuex.vuejs.org/installation.html#direct-download-cdn
 - `npm install vuex@next --save`
+
+---
+
+## 3. 컴포넌트 아토믹 디자인 패턴
+
+- https://bradfrost.com/blog/post/atomic-web-design
+- atoms -> molecules -> organisms -> pages 컴포넌트 구조설계
