@@ -11,14 +11,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~/scss/main.scss';
+@import '~/assets/scss/main.scss';
 
 .button {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 234px;
+    width: 100%;
     height: 37px;
 
     background-color: $board--color--normal;
@@ -34,6 +34,7 @@ export default {
     }
     &__active {
         background-color: $board--color--active;
+        color: $font--color--active;
     }
 }
 </style>
