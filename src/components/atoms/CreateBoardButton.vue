@@ -22,7 +22,7 @@ export default {
     height: 37px;
 
     background-color: $board--color--normal;
-    border: 1px solid $border--color;
+    border: 1px solid $button--border--color;
     border-radius: 4px;
     color: $font--color--normal;
     font-family: 'Roboto', sans-serif;

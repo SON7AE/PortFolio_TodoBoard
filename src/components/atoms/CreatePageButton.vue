@@ -11,20 +11,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~/scss/main.scss';
+@import '~/assets/scss/main.scss';
 
 .button {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 234px;
+    width: 100%;
     height: 37px;
 
     background-color: $page--color--normal;
-    border: 1px solid $border--color;
+    border: 1px solid $button--border--color;
     border-radius: 4px;
-    color: $font--color--hover;
+    color: $font--color--normal;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     cursor: pointer;
