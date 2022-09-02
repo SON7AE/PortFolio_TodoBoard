@@ -14,6 +14,7 @@ export default { components: { SideSection, MainSection } };
 
 <style lang="scss" scoped>
 @import '~/assets/scss/main.scss';
+
 .page {
     display: flex;
     align-items: center;
