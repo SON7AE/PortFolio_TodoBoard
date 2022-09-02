@@ -1,12 +1,16 @@
 <template>
-    <div class="button">
+    <div class="button" @click="createNewTask">
         <slot name="label"></slot>
     </div>
 </template>
 
 <script>
 export default {
-    setup() {},
+    setup() {
+        const createNewTask = () => {};
+
+        return { createNewTask };
+    },
 };
 </script>
 

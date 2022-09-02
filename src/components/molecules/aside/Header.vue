@@ -2,7 +2,7 @@
     <header class="header">
         <SearchrBar />
         <CreatePageButton>
-            <template #label> Add New Page </template>
+            <template #label>Add New Page</template>
         </CreatePageButton>
     </header>
 </template>

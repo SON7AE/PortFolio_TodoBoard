@@ -31,7 +31,7 @@ export default {
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
         font-weight: 600;
-        color: $color--basic;
+        color: #a6a6a6;
     }
     &__contents {
         width: 100%;

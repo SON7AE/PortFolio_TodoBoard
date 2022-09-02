@@ -32,3 +32,8 @@
 
 -   https://bradfrost.com/blog/post/atomic-web-design
 -   atoms -> molecules -> organisms -> pages 컴포넌트 구조설계
+
+## 4. El Component UI 사용
+
+-   https://element-plus.org/en-US/guide/installation.html#import-in-browser
+-   `npm install element-plus --save`
