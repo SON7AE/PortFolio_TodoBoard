@@ -17,6 +17,7 @@ export default {};
     align-items: center;
 
     padding: 10px 7px;
+    cursor: pointer;
 
     &__dot {
         width: 6px;
