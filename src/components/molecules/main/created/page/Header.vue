@@ -1,17 +1,17 @@
 <template>
     <header class="header">
         <span class="header__title">Enter Title Here</span>
-        <MainCreatedProgress />
+        <MainCreatedPageProgress />
         <div class="header__footer">
             <div class="header__footer__date">
-                <Calendar>
+                <Calendar size="mini" length="200px">
                     <template #label>From</template>
                 </Calendar>
-                <Calendar>
+                <Calendar size="mini" length="200px">
                     <template #label>To</template>
                 </Calendar>
             </div>
-            <CreateBoardButton class="header__footer__button">
+            <CreateBoardButton class="header__footer__button" @click="createBoard">
                 <template #label>Add New Board</template>
             </CreateBoardButton>
         </div>
@@ -21,10 +21,17 @@
 <script>
 import Calendar from '~/components/atoms/Calendar.vue';
 import CreateBoardButton from '~/components/atoms/CreateBoardButton.vue';
-import MainCreatedProgress from '~/components/molecules/main/created/Progress.vue';
+import MainCreatedPageProgress from '~/components/molecules/main/created/page/Progress.vue';
 
 export default {
-    components: { Calendar, CreateBoardButton, MainCreatedProgress },
+    components: { Calendar, CreateBoardButton, MainCreatedPageProgress },
+    setup() {
+        const createBoard = () => {
+            console.log('버튼이 클릭되었습니다.');
+        };
+
+        return { createBoard };
+    },
 };
 </script>
 
@@ -39,6 +46,7 @@ export default {
 
     padding: 80px 30px 30px 20px;
     gap: 16px;
+    background-color: #ffffff;
 
     &__title {
         font-family: 'Roboto', sans-serif;

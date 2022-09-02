@@ -1,5 +1,5 @@
 <template>
-    <div class="calendar">
+    <div class="calendar" :style="{ width: length }">
         <span class="calendar__label">
             <slot name="label"></slot>
         </span>
@@ -11,11 +11,22 @@
 import { ref } from '@vue/reactivity';
 
 export default {
+    props: {
+        size: {
+            type: String,
+            required: true,
+            default: 'large',
+        },
+        length: {
+            type: String,
+            required: true,
+            default: '200px',
+        },
+    },
     setup() {
         const value1 = ref('');
-        const size = ref('large');
 
-        return { value1, size };
+        return { value1 };
     },
 };
 </script>
@@ -27,7 +38,6 @@ export default {
     display: flex;
     align-items: center;
 
-    width: 200px;
     gap: 10px;
 
     &__label {

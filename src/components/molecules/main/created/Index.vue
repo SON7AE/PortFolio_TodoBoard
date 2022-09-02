@@ -1,16 +1,18 @@
 <template>
     <div class="created">
-        <MainCreatedHeader />
-        <MainCreatedMain />
+        <MainCreatedPageHeader />
+        <!-- <MainCreatedPageMain /> -->
+        <MainCreatedBoardIndex />
     </div>
 </template>
 
 <script>
-import MainCreatedHeader from '~/components/molecules/main/created/Header.vue';
-import MainCreatedMain from '~/components/molecules/main/created/Main.vue';
+import MainCreatedPageHeader from '~/components/molecules/main/created/page/Header.vue';
+import MainCreatedPageMain from '~/components/molecules/main/created/page/Main.vue';
+import MainCreatedBoardIndex from '~/components/molecules/main/created/board/Index.vue';
 
 export default {
-    components: { MainCreatedHeader, MainCreatedMain },
+    components: { MainCreatedPageHeader, MainCreatedPageMain, MainCreatedBoardIndex },
 };
 </script>
 
@@ -24,5 +26,7 @@ export default {
 
     width: 100%;
     height: 100%;
+
+    background: #f9f9f9;
 }
 </style>
