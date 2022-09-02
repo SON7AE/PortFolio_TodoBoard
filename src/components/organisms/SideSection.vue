@@ -22,9 +22,10 @@ export default {
     flex-direction: column;
 
     width: 282px;
-    height: 100%;
+    height: calc(100vh - 156px);
 
     padding: 78px 24px;
+    gap: 26px;
 
     border-left: 1px solid $layout--border--color;
     border-right: 1px solid $layout--border--color;

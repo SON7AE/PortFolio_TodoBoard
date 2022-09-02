@@ -1,6 +1,6 @@
 <template>
     <div class="search-bar">
-        <img src="~/assets/images/magnifier.png" alt="" class="search-bar__icon" />
+        <img src="~/assets/images/research.png" alt="" class="search-bar__icon" />
         <input type="text" placeholder="Search" class="search-bar__input" />
     </div>
 </template>
@@ -26,8 +26,8 @@ export default {};
     border-radius: 4px;
 
     &__icon {
-        width: 16px;
-        height: 16px;
+        width: 24px;
+        height: 24px;
     }
     &__input {
         width: 234px;

@@ -19,6 +19,5 @@ export default { components: { BeforeCreateIndex } };
     justify-content: center;
 
     width: 860px;
-    height: 100vh;
 }
 </style>
