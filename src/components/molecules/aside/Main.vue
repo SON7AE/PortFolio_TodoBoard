@@ -32,6 +32,7 @@ export default {
         font-size: 16px;
         font-weight: 600;
         color: #a6a6a6;
+        margin-bottom: 8px;
     }
     &__contents {
         width: 100%;
