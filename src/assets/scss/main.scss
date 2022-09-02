@@ -7,8 +7,11 @@ $page--color--normal: #ffffff;
 $page--color--hover: #fff9f5;
 $page--color--active: #fff9f5;
 
+$input--color--normal: #f2f2f2;
+
 // Border Color
-$border--color: #e79057;
+$button--border--color: #e79057;
+$layout--border--color: #e0e0e0;
 
 // Font Color
 $font--color--basic: #ffffff;
@@ -19,7 +22,7 @@ $font--color--active: #ad4500;
 // font-family: 'Roboto', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-:placeholder {
+::placeholder {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
