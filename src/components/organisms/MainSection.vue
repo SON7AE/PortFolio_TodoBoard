@@ -21,6 +21,7 @@ export default { components: { MainBeforeCreateIndex, MainCreatedIndex } };
     justify-content: center;
 
     width: 860px;
+    height: 100vh;
     border-right: 1px solid $layout--border--color;
 }
 </style>

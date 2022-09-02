@@ -10,6 +10,7 @@ module.exports = {
         'plugin:vue/vue3-strongly-recommended', // Lv2
         // 'plugin:vue/vue3-recommended', // Lv3
         'eslint:recommended',
+        'prettier',
     ],
     // 구문 분석할 패키지 설정(Babel, ES6^ => ES5)
     parserOptions: {
