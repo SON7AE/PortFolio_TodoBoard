@@ -32,6 +32,7 @@ export default {
     outline: 0;
     border: 0;
     background: transparent;
+    font-family: 'Roboto', sans-serif;
     color: $color--black--200;
     cursor: pointer;
 

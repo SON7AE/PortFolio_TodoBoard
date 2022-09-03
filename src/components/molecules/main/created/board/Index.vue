@@ -2,15 +2,19 @@
     <div class="board">
         <MainCreatedBoardHeader />
         <MainCreatedBoardMain />
+        <div class="board__markdown">
+            <ButtonBasic label="Add Markdown" />
+        </div>
     </div>
 </template>
 
 <script>
 import MainCreatedBoardHeader from '~/components/molecules/main/created/board/Header.vue';
 import MainCreatedBoardMain from '~/components/molecules/main/created/board/Main.vue';
+import ButtonBasic from '~/components/atoms/ButtonBasic.vue';
 
 export default {
-    components: { MainCreatedBoardHeader, MainCreatedBoardMain },
+    components: { MainCreatedBoardHeader, MainCreatedBoardMain, ButtonBasic },
 };
 </script>
 
@@ -22,7 +26,6 @@ export default {
     flex-direction: column;
 
     width: calc(100% - 108px);
-    height: 187px;
 
     padding: 24px;
     gap: 30px;
@@ -33,9 +36,16 @@ export default {
     border-radius: 4px;
 
     margin: 30px 30px 0 30px;
-}
-.select-box {
-    display: flex;
-    align-items: center;
+
+    &__markdown {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+
+        padding-top: 24px;
+        border-top: 1px solid #ededed;
+    }
 }
 </style>
