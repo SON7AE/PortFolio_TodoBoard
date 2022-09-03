@@ -1,17 +1,28 @@
 <template>
     <header class="header">
         <SearchrBar />
-        <CreatePageButton>
+        <CreatePageButton @isCreateNewTask="isCreateNewTask">
             <template #label>Add New Page</template>
         </CreatePageButton>
     </header>
 </template>
 
 <script>
-import SearchrBar from '../../atoms/SearchrBar.vue';
-import CreatePageButton from '../../atoms/CreatePageButton.vue';
+import SearchrBar from '~/components/atoms/SearchrBar.vue';
+import CreatePageButton from '~/components/atoms/CreatePageButton.vue';
 
-export default { components: { SearchrBar, CreatePageButton } };
+export default {
+    components: { SearchrBar, CreatePageButton },
+    setup() {
+        const isCreateNewTask = () => {
+            this.$emit('isCreateNewTask');
+        };
+
+        return {
+            isCreateNewTask,
+        };
+    },
+};
 </script>
 
 <style lang="scss" scoped>

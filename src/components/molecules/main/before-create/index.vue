@@ -6,12 +6,17 @@
                 <span>1. Create a page</span>
                 <span>2. Add boards to page</span>
             </div>
+            <CreatePageButton>
+                <template #label>Add New Page</template>
+            </CreatePageButton>
         </div>
     </div>
 </template>
 
 <script>
-export default {};
+import CreatePageButton from '~/components/atoms/CreatePageButton.vue';
+
+export default { components: { CreatePageButton } };
 </script>
 
 <style lang="scss" scoped>
@@ -44,6 +49,7 @@ export default {};
             justify-content: center;
 
             font-size: 18px;
+            margin-bottom: 30px;
         }
     }
 }

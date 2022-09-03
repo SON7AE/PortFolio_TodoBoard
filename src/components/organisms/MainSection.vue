@@ -1,7 +1,7 @@
 <template>
     <div class="main-section">
-        <!-- <MainBeforeCreateIndex /> -->
-        <MainCreatedIndex />
+        <MainBeforeCreateIndex v-if="value" />
+        <MainCreatedIndex v-else />
     </div>
 </template>
 

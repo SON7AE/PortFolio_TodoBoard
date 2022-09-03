@@ -1,6 +1,6 @@
 <template>
     <div class="side-section">
-        <AsideHeader />
+        <AsideHeader @isCreateNewTask="isCreateNewTask" />
         <AsideMain />
     </div>
 </template>
@@ -11,6 +11,15 @@ import AsideMain from '~/components/molecules/aside/Main.vue';
 
 export default {
     components: { AsideHeader, AsideMain },
+    setup() {
+        const isCreateNewTask = () => {
+            this.$emit('isCreateNewTask');
+        };
+
+        return {
+            isCreateNewTask,
+        };
+    },
 };
 </script>
 

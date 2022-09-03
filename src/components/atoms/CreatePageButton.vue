@@ -1,5 +1,5 @@
 <template>
-    <div class="button" @click="createNewTask">
+    <div class="button" @click="isCreateNewTask">
         <slot name="label"></slot>
     </div>
 </template>
@@ -7,9 +7,11 @@
 <script>
 export default {
     setup() {
-        const createNewTask = () => {};
+        const isCreateNewTask = () => {
+            this.$emit('isCreateNewTask');
+        };
 
-        return { createNewTask };
+        return { isCreateNewTask };
     },
 };
 </script>
