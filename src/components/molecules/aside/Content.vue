@@ -22,7 +22,7 @@ export default {};
     &__dot {
         width: 6px;
         height: 6px;
-        background-color: #00f38d;
+        background-color: $color--green--000;
         border-radius: 50%;
         margin-right: 10px;
     }
@@ -32,7 +32,7 @@ export default {};
         font-weight: 600;
     }
     &:hover {
-        background-color: #f5f5f5;
+        background-color: $color--white--300;
     }
 }
 </style>

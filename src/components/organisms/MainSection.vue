@@ -22,6 +22,6 @@ export default { components: { MainBeforeCreateIndex, MainCreatedIndex } };
 
     width: 860px;
     height: 100vh;
-    border-right: 1px solid $layout--border--color;
+    border-right: 1px solid $color--white--600;
 }
 </style>

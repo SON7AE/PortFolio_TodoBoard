@@ -32,7 +32,7 @@ export default {
         font-family: 'Roboto', sans-serif;
         font-size: 24px;
         font-weight: 600;
-        color: #c4c4c4;
+        color: $color--white--600;
 
         margin-left: 16px;
     }

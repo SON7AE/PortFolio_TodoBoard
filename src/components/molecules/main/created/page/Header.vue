@@ -46,13 +46,13 @@ export default {
 
     padding: 80px 30px 30px 20px;
     gap: 16px;
-    background-color: #ffffff;
+    background-color: $color--white--000;
 
     &__title {
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 36px;
-        color: $created--color--basic;
+        color: $color--white--600;
     }
     &__footer {
         display: flex;
@@ -66,7 +66,7 @@ export default {
         }
         &__button {
             width: 188px;
-            color: $font--color--basic;
+            color: $color--white--000;
         }
     }
 }

@@ -16,6 +16,7 @@ export default { components: { SearchrBar, CreatePageButton } };
 
 <style lang="scss" scoped>
 @import '~/assets/scss/main.scss';
+
 .header {
     display: flex;
     flex-direction: column;

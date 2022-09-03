@@ -22,7 +22,7 @@ export default {};
     padding: 8px 10px;
     gap: 8px;
 
-    background-color: $input--color--normal;
+    background-color: $color--white--200;
     border-radius: 4px;
 
     &__icon {

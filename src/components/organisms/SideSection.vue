@@ -27,7 +27,7 @@ export default {
     padding: 78px 24px;
     gap: 26px;
 
-    border-left: 1px solid $layout--border--color;
-    border-right: 1px solid $layout--border--color;
+    border-left: 1px solid $color--white--600;
+    border-right: 1px solid $color--white--600;
 }
 </style>

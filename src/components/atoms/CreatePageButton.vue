@@ -25,20 +25,21 @@ export default {
     width: 100%;
     height: 37px;
 
-    background-color: $page--color--normal;
-    border: 1px solid $button--border--color;
+    background-color: $color--white--000;
+    border: 1px solid $color--orange--000;
     border-radius: 4px;
-    color: $font--color--normal;
+    color: $color--orange--000;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     cursor: pointer;
 
     &:hover {
-        background-color: $page--color--hover;
+        background-color: $color--white--100;
     }
+    // active 요소가 왜 있는지 체크
     &__active {
-        background-color: $page--color--active;
-        color: $font--color--active;
+        background-color: $color--white--100;
+        color: $color--orange--200;
     }
 }
 </style>

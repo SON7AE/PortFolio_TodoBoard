@@ -27,6 +27,6 @@ export default {
     width: 100%;
     height: 100%;
 
-    background: #f9f9f9;
+    background: $color--white--400;
 }
 </style>

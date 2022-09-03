@@ -21,7 +21,7 @@ export default {};
 
     &__text {
         font-family: 'Roboto', sans-serif;
-        color: #6d6d6d;
+        color: $color--black--200;
     }
     &__bar {
         width: 238px;

@@ -31,7 +31,7 @@ export default {
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
         font-weight: 600;
-        color: #a6a6a6;
+        color: $color--white--700;
         margin-bottom: 8px;
     }
     &__contents {

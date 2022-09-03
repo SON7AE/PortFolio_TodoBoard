@@ -9,8 +9,8 @@
             </Calendar>
         </div>
         <div class="main__button">
-            <ButtonBasic :label="'Duplicate'" />
-            <ButtonBasic :label="'Delete'" />
+            <ButtonBasic label="Duplicate" />
+            <ButtonBasic label="Delete" theme="red" />
         </div>
     </div>
 </template>

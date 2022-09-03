@@ -22,7 +22,7 @@ export default {};
 
     width: 100%;
     height: 100%;
-    background: #f9f9f9;
+    background: $color--white--500;
 
     &__empty {
         display: flex;
@@ -31,7 +31,7 @@ export default {};
         justify-content: center;
 
         font-family: 'Roboto', sans-serif;
-        color: #454545;
+        color: $color--black--100;
         margin: auto;
 
         &__text-1 {
@@ -48,12 +48,12 @@ export default {};
 
             width: 74px;
             height: 74px;
-            border: 1px solid $button--border--color;
+            border: 1px solid $color--orange--000;
             border-radius: 50%;
 
             font-family: 'Roboto', sans-serif;
             font-size: 32px;
-            color: $board--color--normal;
+            color: $color--orange--000;
 
             margin-top: 20px;
             cursor: pointer;

@@ -21,20 +21,20 @@ export default {
     width: 100%;
     height: 37px;
 
-    background-color: $board--color--normal;
-    border: 1px solid $button--border--color;
+    background-color: $color--orange--000;
+    border: 1px solid $color--orange--000;
     border-radius: 4px;
-    color: $font--color--normal;
+    color: $color--orange--000;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     cursor: pointer;
 
     &:hover {
-        background-color: $board--color--hover;
+        background-color: $color--orange--100;
     }
     &__active {
-        background-color: $board--color--active;
-        color: $font--color--active;
+        background-color: $color--orange--200;
+        color: $color--orange--200;
     }
 }
 </style>

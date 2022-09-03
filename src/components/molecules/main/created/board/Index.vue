@@ -27,7 +27,7 @@ export default {
     padding: 24px;
     gap: 30px;
 
-    background: #ffffff;
+    background: $color--white--000;
     border: 1px solid #ededed;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
     border-radius: 4px;

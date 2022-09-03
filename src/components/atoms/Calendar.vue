@@ -42,7 +42,7 @@ export default {
 
     &__label {
         font-family: 'Roboto', sans-serif;
-        color: #6d6d6d;
+        color: $color--black--200;
     }
 }
 </style>

@@ -1,26 +1,26 @@
 <template>
-    <button :class="{ delete: isDelete }" class="button-basic">
+    <button :data-theme="theme" class="button-basic">
         {{ label }}
     </button>
 </template>
 
 <script>
-import { computed } from '@vue/reactivity';
+/**
+ * @typedef {"defalut" | "red"} Theme
+ */
 export default {
     props: {
         label: {
             type: String,
             required: true,
         },
-    },
-    setup(props) {
-        const isDelete = computed(() => {
-            if (props.label === 'Delete') true;
-        });
-
-        return {
-            isDelete,
-        };
+        theme: {
+            /**@type {import("vue").PropType<Theme>} */
+            type: String,
+            required: false,
+            /**@type {Theme} */
+            default: 'default',
+        },
     },
 };
 </script>
@@ -32,16 +32,18 @@ export default {
     outline: 0;
     border: 0;
     background: transparent;
+    color: $color--black--200;
     cursor: pointer;
 
-    &__active {
+    &[data-theme='default'] {
         &:hover {
-            color: red;
+            color: $color--black--000;
         }
     }
-
-    &:hover {
-        color: #00f38d;
+    &[data-theme='red'] {
+        &:hover {
+            color: #f30000;
+        }
     }
 }
 </style>
