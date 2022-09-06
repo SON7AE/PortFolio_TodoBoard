@@ -1,19 +1,11 @@
 <template>
-    <div class="button" @click="isCreateNewTask">
+    <div class="button">
         <slot name="label"></slot>
     </div>
 </template>
 
 <script>
-export default {
-    setup() {
-        const isCreateNewTask = () => {
-            this.$emit('isCreateNewTask');
-        };
-
-        return { isCreateNewTask };
-    },
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>

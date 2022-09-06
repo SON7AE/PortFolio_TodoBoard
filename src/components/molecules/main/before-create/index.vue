@@ -16,7 +16,9 @@
 <script>
 import CreatePageButton from '~/components/atoms/CreatePageButton.vue';
 
-export default { components: { CreatePageButton } };
+export default {
+    components: { CreatePageButton },
+};
 </script>
 
 <style lang="scss" scoped>

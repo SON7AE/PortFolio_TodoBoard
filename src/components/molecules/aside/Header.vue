@@ -1,7 +1,7 @@
 <template>
     <header class="header">
         <SearchrBar />
-        <CreatePageButton @isCreateNewTask="isCreateNewTask">
+        <CreatePageButton>
             <template #label>Add New Page</template>
         </CreatePageButton>
     </header>
@@ -13,15 +13,6 @@ import CreatePageButton from '~/components/atoms/CreatePageButton.vue';
 
 export default {
     components: { SearchrBar, CreatePageButton },
-    setup() {
-        const isCreateNewTask = () => {
-            this.$emit('isCreateNewTask');
-        };
-
-        return {
-            isCreateNewTask,
-        };
-    },
 };
 </script>
 

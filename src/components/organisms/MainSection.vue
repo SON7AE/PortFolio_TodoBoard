@@ -1,7 +1,7 @@
 <template>
     <div class="main-section">
-        <MainBeforeCreateIndex v-if="value" />
-        <MainCreatedIndex v-else />
+        <!-- <MainCreatedIndex /> -->
+        <MainBeforeCreateIndex />
     </div>
 </template>
 
@@ -9,7 +9,9 @@
 import MainBeforeCreateIndex from '~/components/molecules/main/before-create/index.vue';
 import MainCreatedIndex from '~/components/molecules/main/created/index.vue';
 
-export default { components: { MainBeforeCreateIndex, MainCreatedIndex } };
+export default {
+    components: { MainBeforeCreateIndex, MainCreatedIndex },
+};
 </script>
 
 <style lang="scss" scoped>

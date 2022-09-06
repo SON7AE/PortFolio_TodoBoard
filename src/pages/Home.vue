@@ -1,6 +1,6 @@
 <template>
     <div class="page">
-        <SideSection @isCreateNewTask="isCreateNewTask" />
+        <SideSection />
         <MainSection />
     </div>
 </template>
@@ -11,10 +11,6 @@ import MainSection from '~/components/organisms/MainSection.vue';
 
 export default {
     components: { SideSection, MainSection },
-    setup() {
-        const isCreateNewTask = () => {};
-        return { isCreateNewTask };
-    },
 };
 </script>
 
