@@ -17,7 +17,6 @@ export default {
         const page = ref(false);
         const createPage = () => {
             page.value = true;
-            console.log('페이지를 생성해주세요.');
         };
 
         return { page, createPage };

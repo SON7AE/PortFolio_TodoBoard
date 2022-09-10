@@ -9,7 +9,6 @@ export default {
     emits: ['createPage'],
     setup(props, { emit }) {
         const createPage = () => {
-            console.log('버튼이 클릭되었어요.');
             emit('createPage');
         };
 

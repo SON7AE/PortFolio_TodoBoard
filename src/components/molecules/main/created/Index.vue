@@ -1,8 +1,8 @@
 <template>
     <div class="created">
         <MainCreatedPageHeader />
-        <!-- <MainCreatedPageMain /> -->
-        <MainCreatedBoardIndex />
+        <MainCreatedBoardIndex v-if="board" />
+        <MainCreatedPageMain v-else @createBoard="createBoard" />
     </div>
 </template>
 
@@ -10,9 +10,18 @@
 import MainCreatedPageHeader from '~/components/molecules/main/created/page/Header.vue';
 import MainCreatedPageMain from '~/components/molecules/main/created/page/Main.vue';
 import MainCreatedBoardIndex from '~/components/molecules/main/created/board/Index.vue';
+import { ref } from '@vue/reactivity';
 
 export default {
     components: { MainCreatedPageHeader, MainCreatedPageMain, MainCreatedBoardIndex },
+    setup() {
+        const board = ref(false);
+        const createBoard = () => {
+            board.value = true;
+        };
+
+        return { board, createBoard };
+    },
 };
 </script>
 

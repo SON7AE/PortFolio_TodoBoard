@@ -3,13 +3,23 @@
         <div class="main__empty">
             <span class="main__empty__text-1">There is no board yet.</span>
             <span class="main__empty__text-2">Click the button and start flashing!</span>
-            <div class="main__empty__button">+</div>
+            <div class="main__empty__button" @click="createBoard">+</div>
         </div>
     </div>
 </template>
 
 <script>
-export default {};
+export default {
+    emits: ['createBoard'],
+    setup(props, { emit }) {
+        const createBoard = () => {
+            emit('createBoard');
+        };
+        return {
+            createBoard,
+        };
+    },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -22,7 +32,7 @@ export default {};
 
     width: 100%;
     height: 100%;
-    background: $color--white--500;
+    background: $color--white--400;
 
     &__empty {
         display: flex;
