@@ -6,7 +6,7 @@
 
 <script>
 /**
- * @typedef {"defalut" | "red"} Theme
+ * @typedef {"default" | "red"} Theme
  */
 export default {
     props: {

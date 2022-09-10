@@ -1,6 +1,6 @@
 <template>
     <div class="side-section">
-        <AsideHeader />
+        <AsideHeader @createPage="createPage" />
         <AsideMain />
     </div>
 </template>
@@ -11,6 +11,16 @@ import AsideMain from '~/components/molecules/aside/Main.vue';
 
 export default {
     components: { AsideHeader, AsideMain },
+    emits: ['createPage'],
+    setup(props, { emit }) {
+        const createPage = () => {
+            emit('createPage');
+        };
+
+        return {
+            createPage,
+        };
+    },
 };
 </script>
 

@@ -6,7 +6,7 @@
                 <span>1. Create a page</span>
                 <span>2. Add boards to page</span>
             </div>
-            <CreatePageButton>
+            <CreatePageButton @createPage="createPage">
                 <template #label>Add New Page</template>
             </CreatePageButton>
         </div>
@@ -18,6 +18,16 @@ import CreatePageButton from '~/components/atoms/CreatePageButton.vue';
 
 export default {
     components: { CreatePageButton },
+    emits: ['createPage'],
+    setup(props, { emit }) {
+        const createPage = () => {
+            emit('createPage');
+        };
+
+        return {
+            createPage,
+        };
+    },
 };
 </script>
 

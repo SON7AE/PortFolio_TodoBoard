@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <span class="header__title">Enter Title Here</span>
+        <Input size="large" />
         <MainCreatedPageProgress />
         <div class="header__footer">
             <div class="header__footer__date">
@@ -19,12 +19,13 @@
 </template>
 
 <script>
+import Input from '~/components/atoms/Input.vue';
 import Calendar from '~/components/atoms/Calendar.vue';
 import CreateBoardButton from '~/components/atoms/CreateBoardButton.vue';
 import MainCreatedPageProgress from '~/components/molecules/main/created/page/Progress.vue';
 
 export default {
-    components: { Calendar, CreateBoardButton, MainCreatedPageProgress },
+    components: { Input, Calendar, CreateBoardButton, MainCreatedPageProgress },
     setup() {
         const createBoard = () => {
             console.log('버튼이 클릭되었습니다.');
@@ -48,12 +49,6 @@ export default {
     gap: 16px;
     background-color: $color--white--000;
 
-    &__title {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
-        font-size: 36px;
-        color: $color--white--600;
-    }
     &__footer {
         display: flex;
         align-items: center;

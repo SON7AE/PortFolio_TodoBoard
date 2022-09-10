@@ -1,16 +1,27 @@
 <template>
     <div class="page">
-        <SideSection />
-        <MainSection />
+        <SideSection @createPage="createPage" />
+        <MainSection :page="page" />
     </div>
 </template>
 
 <script>
 import SideSection from '~/components/organisms/SideSection.vue';
 import MainSection from '~/components/organisms/MainSection.vue';
+import { ref } from '@vue/reactivity';
 
 export default {
     components: { SideSection, MainSection },
+    emits: ['createPage'],
+    setup() {
+        const page = ref(false);
+        const createPage = () => {
+            page.value = true;
+            console.log('페이지를 생성해주세요.');
+        };
+
+        return { page, createPage };
+    },
 };
 </script>
 

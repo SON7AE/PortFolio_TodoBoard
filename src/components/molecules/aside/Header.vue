@@ -1,7 +1,7 @@
 <template>
     <header class="header">
         <SearchrBar />
-        <CreatePageButton>
+        <CreatePageButton @createPage="createPage">
             <template #label>Add New Page</template>
         </CreatePageButton>
     </header>
@@ -13,6 +13,16 @@ import CreatePageButton from '~/components/atoms/CreatePageButton.vue';
 
 export default {
     components: { SearchrBar, CreatePageButton },
+    emits: ['createPage'],
+    setup(props, { emit }) {
+        const createPage = () => {
+            emit('createPage');
+        };
+
+        return {
+            createPage,
+        };
+    },
 };
 </script>
 

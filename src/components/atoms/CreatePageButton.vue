@@ -1,11 +1,23 @@
 <template>
-    <div class="button">
+    <div class="button" @click="createPage">
         <slot name="label"></slot>
     </div>
 </template>
 
 <script>
-export default {};
+export default {
+    emits: ['createPage'],
+    setup(props, { emit }) {
+        const createPage = () => {
+            console.log('버튼이 클릭되었어요.');
+            emit('createPage');
+        };
+
+        return {
+            createPage,
+        };
+    },
+};
 </script>
 
 <style lang="scss" scoped>

@@ -1,17 +1,16 @@
 <template>
     <header class="header">
         <CheckBox />
-        <span class="header__title">Enter Title Here</span>
+        <Input size="small" class="header__title" />
     </header>
 </template>
 
 <script>
 import CheckBox from '~/components/atoms/CheckBox.vue';
+import Input from '~/components/atoms/Input.vue';
 
 export default {
-    components: {
-        CheckBox,
-    },
+    components: { Input, CheckBox },
 };
 </script>
 
@@ -24,16 +23,6 @@ export default {
 
     &__title {
         flex-grow: 1;
-
-        border: 0;
-        outline: 0;
-
-        background: transparent;
-        font-family: 'Roboto', sans-serif;
-        font-size: 24px;
-        font-weight: 600;
-        color: $color--white--600;
-
         margin-left: 16px;
     }
 }

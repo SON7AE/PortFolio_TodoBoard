@@ -1,7 +1,7 @@
 <template>
     <div class="main-section">
-        <!-- <MainCreatedIndex /> -->
-        <MainBeforeCreateIndex />
+        <MainCreatedIndex v-if="page" />
+        <MainBeforeCreateIndex v-else />
     </div>
 </template>
 
@@ -11,6 +11,13 @@ import MainCreatedIndex from '~/components/molecules/main/created/index.vue';
 
 export default {
     components: { MainBeforeCreateIndex, MainCreatedIndex },
+    props: {
+        page: {
+            type: Boolean,
+            required: true,
+            default: false,
+        },
+    },
 };
 </script>
 
